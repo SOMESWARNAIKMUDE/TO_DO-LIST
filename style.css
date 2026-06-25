@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,17 +7,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    padding: 40px 15px;
 }
 
 .container {
-    width: 400px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -28,30 +30,47 @@ h1 {
 .input-box {
     display: flex;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 input {
     flex: 1;
-    padding: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-button {
-    padding: 10px 15px;
+#addBtn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: #0056b3;
 }
 
 ul {
     list-style: none;
-    margin-top: 20px;
 }
 
 li {
-    background: #eee;
-    padding: 10px;
-    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: #eeeeee;
+    padding: 12px;
+    margin-bottom: 10px;
     border-radius: 5px;
+}
+
+.task-text {
+    cursor: pointer;
+    flex: 1;
 }
 
 .completed {
@@ -60,6 +79,11 @@ li {
 }
 
 .delete-btn {
+    border: none;
+    background: none;
     color: red;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
+    margin-left: 10px;
 }
